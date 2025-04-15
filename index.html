@@ -308,6 +308,83 @@ End teaser video -->
 <!-- End paper abstract -->
 
 
+<!-- 实验1图片 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Zero-Shot and Fine-Tuned Performance</h2>
+      <!-- 图片 -->
+      <div class="is-flex is-justify-content-center is-align-items-center" style="gap: 20px;">
+        <img src="static/images/tab_zeroshot.png" alt="Left image" style="width: 30%; height: auto;" />
+        <img src="static/images/tab_finetune.png" alt="Right image" style="width: 30%; height: auto;" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 静态图片展示结束 -->
+
+<!-- 方法介绍 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Models trained on conventional IMDL datasets lack generalizability to the distribution of AI-edited anime images.  Models pre-trained on the GRE dataset perform relatively better. This implies that certain features of AI-generated manipulations can be learned and partially transferred. However, these models still perform poorly.
+          </p>
+          <p>
+            After fine-tuning on AnimeDL-2M, all models show significant improvements, confirming both the high training value and the annotation quality of the dataset. Some models achieve surprisingly high F1 scores in detection task. This suggests that while models cannot precisely locate manipulated regions, they can still capture global statistical cues such as unnatural frequency artifacts or noise distribution that distinguish fake images from real ones at a coarse level.
+          </p>
+          <p>
+            These findings collectively validate the presence of substantial domain gaps across manipulation methods and image styles, especially for localization tasks. Therefore, AnimeDL-2M serves as a necessary contribution to bridge this gap, offering a dedicated benchmark for AI-edited anime image forensics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- 实验2图片 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Cross-Dataset and In-the-Wild Evaluation</h2>
+      <!-- 图片 -->
+      <div class="is-flex is-justify-content-center is-align-items-center" style="gap: 20px;">
+        <img src="static/images/tab_cross.png" alt="Left image" style="width: 50%; height: auto;" />
+        <img src="static/images/tab_civitai.png" alt="Right image" style="width: 30%; height: auto;" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 静态图片展示结束 -->
+
+<!-- 方法介绍 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            All models exhibit generally poor performance on the localization task under cross-dataset settings. This also suggests that training or fine-tuning on the target domain can substantially improve localization performance.
+          </p>
+          <p>
+            Generalize ability on detection task does not strongly correlate with localization performance. Some models achieve high detection accuracy across domains despite limited localization ability. This implies that detection generalization may depend more on the robustness of the model architecture than on the ability to capture specific forgery artifacts. 
+          </p>
+          <p>
+            PSCC, as the only model that uses RGB images as the sole input modality, demonstrates the weakest generalization, highlighting the importance of multi-modal or multi-channel feature inputs for generalizability.
+          </p>
+          <p>
+            Meanwhile, both TruFor and MMFusion incorporate noise-based features, yet their performance differs significantly. This suggests that not all handcrafted features are equally effective, and the design of the feature extractor plays a critical role in mitigating overfitting. Therefore, careful selection and design of input features is essential for building more generalizable forensic models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!--BibTex citation 
   <section class="section" id="BibTeX">

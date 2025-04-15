@@ -1,6 +1,6 @@
 # AnimeDL-2M
 
-**AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era**
+Here is the repo for our paper: AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era
 
 ---
 

@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -92,7 +92,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Dataset & Code</span>
                   </a>
                 </span>
 
@@ -142,7 +142,10 @@ End teaser video -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent advances in image generation, particularly diffusion models, have significantly lowered the barrier for creating sophisticated forgeries, making image manipulation detection and localization (IMDL) increasingly challenging. While prior work in IMDL has focused largely on natural images, the anime domain remains underexplored—despite its growing vulnerability to AI-generated forgeries. Misrepresentations of AI-generated images as hand-drawn artwork, copyright violations, and inappropriate content modifications pose serious threats to the anime community and industry. To address this gap, we propose AnimeDL-2M, the first large-scale benchmark for anime IMDL with comprehensive annotations. It comprises over two million images including real, partially manipulated, and fully AI-generated samples. 
+          </p>
+          <p>
+            Experiments indicate that models trained on existing IMDL datasets of natural images perform poorly when applied to anime images, highlighting a clear domain gap between anime and natural images. To better handle IMDL tasks in anime domain, we further propose  AniXplore, a novel model tailored to the visual characteristics of anime imagery. Extensive evaluations demonstrate that AniXplore achieves superior performance compared to existing methods.
           </p>
         </div>
       </div>
@@ -152,130 +155,168 @@ End teaser video -->
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- 数据集图片 -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+    <div class="container has-text-centered">
+      <h2 class="title is-3">AnimeDL-2M Dataset</h2>
+      <!-- 图片 -->
+      <img src="static/images/pipeline.png"  alt="IMG pipeline" style="width: 70%; height: auto;" />
+
+
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- 静态图片展示结束 -->
+
+
+<!-- 数据集介绍 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            The dataset is constructed based on the above pipeline. For each input image, we use 3 inpainting methods and 3 text-to-image methods to generate 3 partially manipulated images and 3 entirely fake images.
+          </p>
+          <p>
+            For each group of original, edited, or generated images, AnimeDL-2M not only provides segmentation masks as in traditional datasets, but also includes additional annotations such as image captions, object descriptions, mask labels, and editing methods. These enriched annotations enable a broader range of tasks to be conducted on this dataset and are intended to facilitate future research in related domains.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- 介绍统计图 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+
+
+      <div class="column is-half has-text-centered">
+        <img src="static/images/Tab_dataset_staistics.png" alt="Descriptive alt text" style="width: 50%; height: auto;" />
+      </div>
+
+      <div class="column is-half">
+        <h2 class="title is-5">Dataset Statics</h2>
+        <p class="content has-text-justified">
+          AnimeDL-2M contains 639,268 real images, 779,502 partially fake images and 884,129 fully AI-generated images. The CivitAI subset contains images generated by 14 different base models.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section> -->
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- 图文轮播 介绍数据集-->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div id="image-text-carousel" class="carousel" data-autoplay="true" data-delay="5000">
+      
+      <!-- 第 1 项 -->
+      <div class="carousel-item">
+        <div class="columns is-vcentered">
+          <div class="column is-half has-text-centered">
+            <img src="static/images/Tab_dataset_staistics.png" alt="Descriptive alt text" style="width: 50%; height: auto;" />
+          </div>
+          <div class="column is-half">
+            <h2 class="title is-5">Dataset Statics</h2>
+            <p class="content has-text-justified">
+              AnimeDL-2M contains 639,268 real images, 779,502 partially fake images and 884,129 fully AI-generated images. The CivitAI subset contains images generated by 14 different base models.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- 第 2 项 -->
+      <div class="carousel-item">
+        <div class="columns is-vcentered">
+          <div class="column is-half has-text-centered">
+            <img src="static/images/Fig_aesthetic_score.png" alt="Image 2" style="width: 80%; height: auto;" />
+          </div>
+          <div class="column is-half">
+            <h2 class="title is-5">Aesthetic Score</h2>
+            <p class="content has-text-justified">
+              Images in AnimeDL-2M achieve high aesthetic scores by the latest evaluation model
+              <a href="https://arxiv.org/abs/2405.14705" target="_blank">MPS</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第 3 项 -->
+      <div class="carousel-item">
+        <div class="columns is-vcentered">
+          <div class="column is-half has-text-centered">
+            <img src="static/images/Fig_subject_distribution.png" alt="Image 3" style="width: 80%; height: auto;" />
+          </div>
+          <div class="column is-half">
+            <h2 class="title is-5">Subjects Distribution</h2>
+            <p class="content has-text-justified">
+              The distribution of manipulated subjects is fairly diverse and seemingly, which contributes to model generalization and enables a more comprehensive evaluation of model performance.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
+
+
+
+
+<!-- 方法图片 -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+    <div class="container has-text-centered">
+      <h2 class="title is-3">AniXplore Model</h2>
+      <!-- 图片 -->
+      <img src="static/images/method.png" alt="IMG METHOD" style="width: 70%; height: auto;" />
+    </div>
+  </div>
+</section>
+<!-- 静态图片展示结束 -->
+
+
+<!-- 方法介绍 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Anime images exhibit distinctive visual characteristics that distinguish them from natural daily images, such as unrealistic lighting conditions, geometric abstractions, and the absence of sensor noise. These distinct properties underscore the necessity for specialized methods tailored to the IMDL tasks in the anime domain.
+          </p>
+          <p>
+            While it is commonly assumed that anime images contain fewer high-frequency components such as complex textures or stochastic noise, an overlooked yet crucial aspect is their retention of edge information in mid-to-high frequencies, especially the line contours. As anime images typically have clean and uncluttered scenes, line work in these images is generally sharp and well-defined. Furthermore, as these lines are manually drawn, they tend to exhibit a consistent artistic style across the image. Consequently, localized inconsistencies in stroke thickness, color, or drawing style may serve as effective cues for identifying image manipulations.
+          </p>
+          <p>
+            Additionally, prior studies have demonstrated that image manipulations frequently occur at the object level. Anime images, which typically comprise a limited number of semantically salient objects with well-defined boundaries, are especially amenable to object-level semantic reasoning. Motivated by these insights, we propose  AniXplore, a model with dual-branch architecture that integrates semantic representations with frequency-aware features to enhance the IMDL in AI-generated anime images.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End paper abstract -->
 
 
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
+<!--BibTex citation 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
 </section>
-<!--End BibTex citation -->
+End BibTex citation -->
 
 
   <footer class="footer">

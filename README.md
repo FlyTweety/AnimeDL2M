@@ -1,6 +1,8 @@
 # AnimeDL-2M
 
-Here is the repo for our paper: AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era
+Here is the repo for our paper:  
+**AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era**  
+📄 [Read the Paper on arXiv](https://arxiv.org/abs/2504.11015)
 
 ---
 
@@ -20,7 +22,7 @@ By using this dataset, you acknowledge and agree to the following terms:
 
 ### 📥 Download
 
-You can download the dataset from the following link:
+You can download the dataset from the following link:  
 [Download AnimeDL-2M Dataset](https://drive.google.com/drive/folders/1f2wZ1naVYU9jf-RxKh3c3PUML30u5tEQ?usp=sharing)
 
 ---
@@ -31,7 +33,17 @@ Coming soon
 
 ---
 
-## 💡 Template
+## 📚 Citation
 
-This project page is based on:  
-[Academic Project Page Template by eliahuhorwitz](https://github.com/eliahuhorwitz/Academic-project-page-template)
+If you use the AnimeDL-2M dataset or AniXplore model in your work, **please cite our paper**:
+
+```bibtex
+@misc{zhu2025animedl2mmillionscaleaigeneratedanime,
+      title={AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era}, 
+      author={Chenyang Zhu and Xing Zhang and Yuyang Sun and Ching-Chun Chang and Isao Echizen},
+      year={2025},
+      eprint={2504.11015},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.11015}, 
+}

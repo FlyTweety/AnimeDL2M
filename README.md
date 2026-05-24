@@ -2,6 +2,7 @@
 
 Here is the repo for our paper:
 **AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era**
+
 📄 [Read the Paper on arXiv](https://arxiv.org/abs/2504.11015)
 
 Our paper is accepted by ACM MM 25 DFF Workshop (Oral)

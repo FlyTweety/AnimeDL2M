@@ -25,7 +25,8 @@ By using this dataset, you acknowledge and agree to the following terms:
 ### 📥 Download
 
 You can download the dataset from the following link:
-[Download AnimeDL-2M Dataset](https://drive.google.com/drive/folders/1f2wZ1naVYU9jf-RxKh3c3PUML30u5tEQ?usp=sharing)
+
+[HuggingFace](https://huggingface.co/datasets/FlyTweety/AnimeDL-2M)
 
 ---
 
